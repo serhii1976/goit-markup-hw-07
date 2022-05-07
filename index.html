@@ -15,24 +15,25 @@
     <body>
         <!-- шапка сайта -->
         <header class="header">
-            <div class="container">
-                <a class="header-logo link" href="./index.html">
-                    <span class="logo-web logo">Web</span><span class="logo-studio logo">Studio</span></a>
-                <nav class="header-nav">
-                    <ul class="header-list list">
-                        <li class="header-item"><a href="./index.html" class="header-link link current">Студия</a></li>
-                        <li class="header-item"><a href="./portfolio.html" class="header-link link">Портфолио</a></li>
-                        <li class="header-item"><a href="" class="header-link link">Контакты</a></li>
+            <div class="container header__container">
+                <a class="header__logo logo link" href="./index.html">
+                    <span class="logo__web">Web</span>
+                    <span class="logo__studio--dark">Studio</span></a>
+                <nav class="navigation">
+                    <ul class="menu-list list">
+                        <li class="menu-list__item"><a href="./index.html" class="menu-list__link link menu-list__current">Студия</a></li>
+                        <li class="menu-list__item"><a href="./portfolio.html" class="menu-list__link link">Портфолио</a></li>
+                        <li class="menu-list__item"><a href="" class="menu-list__link link">Контакты</a></li>
                     </ul>
                 </nav>
-                <div class="header-connect">
-                    <a href="mailto:info@devstudio.com" class="header-mail link">
-                        <svg class="header-mail-icon" width="16" height="12">
+                <div class="connect">
+                    <a href="mailto:info@devstudio.com" class="connect__link link">
+                        <svg class="connect__icon" width="16" height="12">
                             <use href="./images/icons.svg#icon-envelope"></use>
                         </svg>
                         info@devstudio.com</a>
-                    <a href="tel:+380961111111" class="header-tel link">
-                        <svg class="header-tel-icon" width="10" height="16">
+                    <a href="tel:+380961111111" class="connect__link link">
+                        <svg class="connect__icon" width="10" height="16">
                             <use href="./images/icons.svg#icon-smartphone"></use>
                         </svg>
                         +38 096 111 11 11</a>
@@ -53,25 +54,25 @@
                     <h2 class="visually-hidden">наши преимущества</h2>
                     <ul class="advantage-list list">
                         <li class="advantage-item antena">
-                            <h3 class="advantage-subtitle">Внимание к деталям</h3>
+                            <h3 class="advantage-subtitle subtitle">Внимание к деталям</h3>
                             <p class="advantage-text">
                                 Идейные соображения, а также начало повседневной работы по формированию позиции.
                             </p>
                         </li>
                         <li class="advantage-item clock">
-                            <h3 class="advantage-subtitle">Пунктуальность</h3>
+                            <h3 class="advantage-subtitle subtitle">Пунктуальность</h3>
                             <p class="advantage-text">
                                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
                             </p>
                         </li>
                         <li class="advantage-item diagram">
-                            <h3 class="advantage-subtitle">Планирование</h3>
+                            <h3 class="advantage-subtitle subtitle">Планирование</h3>
                             <p class="advantage-text">
                                 Равным образом консультация с широким активом в значительной степени обуславливает.
                             </p>
                         </li>
                         <li class="advantage-item astronaut">
-                            <h3 class="advantage-subtitle">Современные технологии</h3>
+                            <h3 class="advantage-subtitle subtitle">Современные технологии</h3>
                             <p class="advantage-text">
                                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
                             </p>
@@ -88,19 +89,19 @@
                         <li class="about-item">
                             <img src="./images/img1.jpg" alt="Десктопные приложения" width="370">
                             <div class="label">
-                                <h3 class="label-text">Десктопные приложения</h3>
+                                <h3 class="label-text subtitle">Десктопные приложения</h3>
                             </div>
                         </li>
                         <li class="about-item">
                             <img src="./images/img2.jpg" alt="Мобильные приложения" width="370">
                             <div class="label">
-                                <h3 class="label-text">Мобильные приложения</h3>
+                                <h3 class="label-text subtitle">Мобильные приложения</h3>
                             </div>
                         </li>
                         <li class="about-item">
                             <img src="./images/img3.jpg" alt="Дизайнерские решения" width="370">
                             <div class="label">
-                                <h3 class="label-text">Дизайнерские решения</h3>
+                                <h3 class="label-text subtitle">Дизайнерские решения</h3>
                             </div>
                         </li>
                     </ul>
@@ -116,7 +117,7 @@
                             <img src="./images/team-card1.jpg" alt="Product Designer"  width="270">
                             <h3 class="team-subtitle">Игорь Демьяненко</h3>
                             <p class="team-text">Product Designer</p>
-                            <ul class="team-soc-list list">
+                            <ul class="social team-soc-list list">
                                 <li class="team-soc-item">
                                     <a href="" class="team-soc-link link">
                                         <svg class="team-soc-icon" width="20" height="20">
@@ -311,27 +312,28 @@
 
         <!-- секцмя footer -->
         <footer class="footer">
-            <div class="container">
-                <div>
-                    <a class="footer-logo link" href="./index.html">
-                        <span class="logo-web logo">Web</span><span class="footer-studio logo">Studio</span></a>
+            <div class="container footer__container">
+                <div class="footer-contacts">
+                    <a class="footer__logo logo link" href="./index.html">
+                        <span class="logo__web">Web</span>
+                        <span class="logo__studio--light">Studio</span></a>
                     <address class="footer-adress">
-                        <ul class="footer-list list">
-                            <li class="footer-item">
-                                <a class="footer-map link" href="https://goo.gl/maps/XYfjbrA8sJzKYdKr6">г. Киев, пр-т Леси Украинки,26</a>
+                        <ul class="adress-list list">
+                            <li class="adress-list__item">
+                                <a class="adress-list__link adress-list__link--map link" href="https://goo.gl/maps/XYfjbrA8sJzKYdKr6">г. Киев, пр-т Леси Украинки,26</a>
                             </li>
-                            <li class="footer-item">
-                                <a class="footer-mail link" href="mailto:info@example.com">info@example.com</a>
+                            <li class="adress-list__item">
+                                <a class="adress-list__link link" href="mailto:info@example.com">info@example.com</a>
                             </li>
-                            <li class="footer-item">
-                                <a class="footer-tel link" href="tel:+380991111111">+38 099 111 11 11</a>
+                            <li class="adress-list__item">
+                                <a class="adress-list__link link" href="tel:+380991111111">+38 099 111 11 11</a>
                             </li>
                         </ul>
                     </address>
                 </div>    
                 <div class="footer-soc">
-                    <p class="footer-soc-title">присоединяйтесь</p>
-                    <ul class="footer-soc-list list">
+                    <h3 class="footer-soc__title subtitle">присоединяйтесь</h3>
+                    <ul class="soc-list list">
                         <li class="footer-soc-item">
                             <a href="" class="footer-soc-link link">
                                 <svg class="footer-soc-icon" width="20" height="20">
