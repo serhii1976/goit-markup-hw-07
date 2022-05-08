@@ -826,22 +826,23 @@ body {
   justify-content: center;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-check:focus + .modal-check-text .chek-wrap {
+
+.modal-check:focus + .modal-check-text span {
   border-color: var(--accent-color);
 }
-.modal-check:hover + .modal-check-text .chek-wrap {
+.modal-check:hover + .modal-check-text span {
   border-color: var(--accent-color);
 }
-.modal-check:checked + .modal-check-text .chek-wrap {
+.modal-check:checked + .modal-check-text span {
   background-color: var(--accent-color);
   border: none;
+}
+.modal-check:checked + .modal-check-text .check-icon {
+  fill: #ffffff;
 }
 
 .check-icon {
   fill: transparent;
-}
-.modal-check:checked + .modal-check-text .check-icon {
-  fill: #ffffff;
 }
 
 .form-link {
