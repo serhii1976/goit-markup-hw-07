@@ -27,10 +27,10 @@
 .hero__btn {
     margin: 0 auto;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        background-color: #188CE8;
+        cursor: pointer;
+    }
 }
 
-.hero__btn:hover,
-.hero__btn:focus {
-    background-color: #188CE8;
-    cursor: pointer;
-}
